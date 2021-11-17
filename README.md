@@ -1,4 +1,2 @@
-![tutorials](https://user-images.githubusercontent.com/67686187/142154169-efd4d1f8-dc37-4ea9-84db-52c6c1006116.jpg)
 
-Tutorial Searis 
-Copyright (C) 2021 Over-Infinity
+![tutorials](https://user-images.githubusercontent.com/67686187/142154845-9b8f08d6-0937-456a-b6fb-f1c3369b49a3.jpg)
