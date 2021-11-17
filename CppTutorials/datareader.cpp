@@ -6,10 +6,13 @@
 #include <iostream>
 #include <functional>
 
+/* InputStream: this class is responsible of getting input stream from source 
+ * and after recive it callback a function of caller to inform  it about done job*/
 class InputStream{
  
 public:
     InputStream(){}
+    /* read stream from source asyn and then call callback function.*/
     void read_async(std::vector<char>& out,std::function<void()> callback){
         out.push_back('O');
         out.push_back('v');
@@ -34,7 +37,7 @@ class DataReader{
 public:
    DataReader(){}   
    void read_stream(){ 
-      stream.read_async(content,
+     stream.read_async(content,
                         std::bind(&DataReader::read_done, this));
    }
 
