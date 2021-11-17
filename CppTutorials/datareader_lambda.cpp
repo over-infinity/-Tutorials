@@ -22,10 +22,8 @@ public:
         out.push_back('n');
         out.push_back('i');
         out.push_back('t');
-        out.push_back('y');
-        
-        callback();
-                      
+        out.push_back('y');        
+        callback();                      
         }
 };
 
