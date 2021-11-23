@@ -26,6 +26,21 @@
 
 /* rsa.cpp */
 /***********************************************************************************
+Key Generation Algorithm:
+This is the original algorithm.
+1- Generate two large random primes, p and q, of approximately equal size such that
+   their product n=pq is of the required bit length, e.g. 1024 bits.
+2- Compute n=pq and ϕ=(p−1)(q−1).
+3- Choose an integer e, 1<e<ϕ, such that gcd(e,ϕ)=1.
+4- Compute the secret exponent d, 1<d<ϕ, such that ed≡1 mod ϕ.
+5- The public key is (n,e)and the private key (d,p,q). Keep all the values d, p, q and ϕ secret. 
+   [Sometimes the private key is written as (n,d) because you need the value of n when using d. 
+    Other times we might write the key pair as ((N,e),d)].
+    
+* n is known as the modulus.
+* e is known as the public exponent or encryption exponent or just the exponent.
+* d is known as the secret exponent or decryption exponent.
+
 RSA Algorithm Example:
 
     Choose p = 3 and q = 11
@@ -38,5 +53,7 @@ RSA Algorithm Example:
     The encryption of m = 2 is c = 27 % 33 = 29
     The decryption of c = 29 is m = 293 % 33 = 2
     
-    https://www.cs.utexas.edu/~mitra/honors/soln.html
+    refrences 
+    - https://www.di-mgt.com.au/rsa_alg.html
+    - https://www.cs.utexas.edu/~mitra/honors/soln.html
 ************************************************************************************/
