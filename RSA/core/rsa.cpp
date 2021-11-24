@@ -60,19 +60,13 @@ RSA Algorithm Example:
 #include <inttypes.h>
 
 #define SWAP(type, value1, value2) {type temp=value2; value2=value1; value1=temp;}
-class RSA{
-   
-public:  
-   
-   /*  RSA Constructor   */
-   RSA(){
-      
-   }
-   
+
+/*  RSA Constructor   */
+   RSA::RSA(){} 
+
    /*  RSA destructor   */
-   ~RSA(){      
-      
-   }   
+   RSA::~RSA(){}
+
    
 /*  
  * @name gcd1
@@ -82,7 +76,7 @@ public:
  * @param num2, second number.
  * @return gcd(num1,num2).
  */
- static uint32_t gcd1(uint32_t num1, uint32_t num2)
+ static uint32_t RSA::gcd1(uint32_t num1, uint32_t num2)
 {
    /* we suppose num1 is greater or equal to num2 if not so swap them */	 
    if(num1 > num2)
@@ -115,7 +109,7 @@ public:
   * @param  num2, second number.
   * @return gcd(num1,num2).
   */
-static uint32_t gcd2(uint32_t num1, uint32_t num2)
+static uint32_t RSA::gcd2(uint32_t num1, uint32_t num2)
 {
     if (num2 == 0)
         return num1;
@@ -124,7 +118,7 @@ static uint32_t gcd2(uint32_t num1, uint32_t num2)
 }
 	
 	
-};
+
 
 
 
