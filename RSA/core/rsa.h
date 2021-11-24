@@ -25,3 +25,16 @@
  */
 
 /* rsa.h */
+
+class RSA{
+   
+public:  
+   
+   RSA();   
+   ~RSA();
+  
+  static uint32_t gcd1(uint32_t num1, uint32_t num2);
+  static uint32_t gcd2(uint32_t num1, uint32_t num2);
+  
+  
+};
