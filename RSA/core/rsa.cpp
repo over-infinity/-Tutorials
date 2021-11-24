@@ -104,7 +104,7 @@ RSA Algorithm Example:
  /* 
   * @name GCD2 
   * @brief  Another more efficient solution for getting GCD is to use modulo operator base on Euclidean algorithm.
-  *          Recursive algorithm.
+  *           GCD2 is a recursive algorithm.
   * @param  num1, first number.
   * @param  num2, second number.
   * @return gcd(num1,num2).
@@ -114,7 +114,7 @@ STATIC uint32_t RSA::GCD2(uint32_t num1, uint32_t num2)
     if (num2 == 0)
         return num1;
 	
-    return gcd2(num2, num1 % num2);     
+    return GCD2(num2, num1 % num2);     
 }
 	
  /* 
