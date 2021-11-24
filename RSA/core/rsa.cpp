@@ -75,10 +75,14 @@ public:
    }   
    
 /*  
- * GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of 
- * two numbers is the largest number that divides both of them. 
+ * @name gcd1
+ * @brief GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of 
+ *         two numbers is the largest number that divides both of them. 
+ * @param num1, first number.
+ * @param num2, second number.
+ * @return gcd(num1,num2).
  */
- static uint32_t gcd(uint32_t num1, uint32_t num2)
+ static uint32_t gcd1(uint32_t num1, uint32_t num2)
 {
    /* we suppose num1 is greater or equal to num2 if not so swap them */	 
    if(num1 > num2)
@@ -102,7 +106,24 @@ public:
 		 
 	 }while(num1 >= num2);
 }   
-   
+	
+ /* 
+  * @name gcd2 
+  * @brief  Another more efficient solution for getting GCD is to use modulo operator base on Euclidean algorithm.
+  *          Recursive algorithm.
+  * @param  num1, first number.
+  * @param  num2, second number.
+  * @return gcd(num1,num2).
+  */
+static uint32_t gcd2(uint32_t num1, uint32_t num2)
+{
+    if (num2 == 0)
+        return num1;
+	
+    return gcd2(num2, num1 % num2);     
+}
+	
+	
 };
 
 
