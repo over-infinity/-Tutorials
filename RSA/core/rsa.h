@@ -26,6 +26,13 @@
 
 /* rsa.h */
 
+#ifndef _RSA_H
+#define _RSA_H
+
+////////////////////  Includes ///////////////////
+#include <inttypes.h>
+#define STATIC static  
+
 class RSA{
    
 public:  
@@ -33,8 +40,12 @@ public:
    RSA();   
    ~RSA();
   
-  static uint32_t gcd1(uint32_t num1, uint32_t num2);
-  static uint32_t gcd2(uint32_t num1, uint32_t num2);
+  STATIC uint32_t Gcd1(uint32_t num1, uint32_t num2);
+  STATIC uint32_t Gcd2(uint32_t num1, uint32_t num2);
+  STATIC bool IsPrime(uint32_t value);
   
   
 };
+
+
+#endif  // _RSA_H
