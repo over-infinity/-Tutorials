@@ -57,7 +57,9 @@ RSA Algorithm Example:
     - https://www.di-mgt.com.au/rsa_alg.html
     - https://www.cs.utexas.edu/~mitra/honors/soln.html
 ************************************************************************************/
+#include <inttypes.h>
 
+#define SWAP(type, value1, value2) {type temp=value2; value2=value1; value1=temp;}
 class RSA{
    
 public:  
@@ -71,6 +73,24 @@ public:
    ~RSA(){      
       
    }   
+   
+   
+ static uint16_t gcd(uint32_t num1, uint32_t num2)
+{
+	uint16_t i, temp;
+	if (num1 > num2)
+	{
+		temp = num1;
+		num1 = num2;
+		num2 = temp;
+	}
+	for (i = num1; i > 0; i--)
+	{
+		if (num1 % i == 0 && num2 % i == 0)
+			return i;
+	}
+}
+   
    
 };
 
