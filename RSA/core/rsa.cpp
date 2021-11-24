@@ -57,3 +57,22 @@ RSA Algorithm Example:
     - https://www.di-mgt.com.au/rsa_alg.html
     - https://www.cs.utexas.edu/~mitra/honors/soln.html
 ************************************************************************************/
+
+class RSA{
+   
+public:  
+   
+   /*  RSA Constructor   */
+   RSA(){
+      
+   }
+   
+   /*  RSA destructor   */
+   ~RSA(){      
+      
+   }   
+   
+};
+
+
+
