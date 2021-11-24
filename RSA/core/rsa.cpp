@@ -57,7 +57,7 @@ RSA Algorithm Example:
     - https://www.di-mgt.com.au/rsa_alg.html
     - https://www.cs.utexas.edu/~mitra/honors/soln.html
 ************************************************************************************/
-#include <inttypes.h>
+#include "rsa.h"
 
 #define SWAP(type, value1, value2) {type temp=value2; value2=value1; value1=temp;}
 
@@ -69,14 +69,14 @@ RSA Algorithm Example:
 
    
 /*  
- * @name gcd1
+ * @name GCD1
  * @brief GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of 
  *         two numbers is the largest number that divides both of them. 
  * @param num1, first number.
  * @param num2, second number.
  * @return gcd(num1,num2).
  */
- static uint32_t RSA::gcd1(uint32_t num1, uint32_t num2)
+ STATIC uint32_t RSA::GCD1(uint32_t num1, uint32_t num2)
 {
    /* we suppose num1 is greater or equal to num2 if not so swap them */	 
    if(num1 > num2)
@@ -102,14 +102,14 @@ RSA Algorithm Example:
 }   
 	
  /* 
-  * @name gcd2 
+  * @name GCD2 
   * @brief  Another more efficient solution for getting GCD is to use modulo operator base on Euclidean algorithm.
   *          Recursive algorithm.
   * @param  num1, first number.
   * @param  num2, second number.
   * @return gcd(num1,num2).
   */
-static uint32_t RSA::gcd2(uint32_t num1, uint32_t num2)
+STATIC uint32_t RSA::GCD2(uint32_t num1, uint32_t num2)
 {
     if (num2 == 0)
         return num1;
@@ -117,8 +117,23 @@ static uint32_t RSA::gcd2(uint32_t num1, uint32_t num2)
     return gcd2(num2, num1 % num2);     
 }
 	
-	
-
+ /* 
+  * @name IsPrime 
+  * @brief  Any whole number which is greater than 1 and has only two factors that is 1 and the number itself, is 
+  *          called a prime number.        
+  * @param  num1, number to check if is prime or not
+  * @return true/false
+  */	
+STATIC bool RSA::IsPrime(uint32_t value)
+{
+	/* simply we only need to cheak half of the number to realize that it is prime or not. */
+	for (int i = 2; i <= (value / 2); i++)
+	{
+		if (value % i == 0)
+			return false;
+	}
+	return true;
+}
 
 
 
