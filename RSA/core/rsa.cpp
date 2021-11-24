@@ -74,23 +74,34 @@ public:
       
    }   
    
-   
- static uint16_t gcd(uint32_t num1, uint32_t num2)
+/*  
+ * GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of 
+ * two numbers is the largest number that divides both of them. 
+ */
+ static uint32_t gcd(uint32_t num1, uint32_t num2)
 {
-	uint16_t i, temp;
-	if (num1 > num2)
-	{
-		temp = num1;
-		num1 = num2;
-		num2 = temp;
-	}
-	for (i = num1; i > 0; i--)
-	{
-		if (num1 % i == 0 && num2 % i == 0)
-			return i;
-	}
-}
-   
+   /* we suppose num1 is greater or equal to num2 if not so swap them */	 
+   if(num1 > num2)
+     SWAP(uint32_t,num1,num2);
+	 
+    do{
+	/* everything divides 0 */
+	if(num1 == 0)
+	   return num2;
+	 if(num2 == 0)
+            return num1;
+	/*  equal values example : gcd(5,5) = 5 */
+	if(num1 == num2)
+          return num1;
+		
+	num1=num1-num2;
+	    
+	/* be sure that num1 is greator that num2  */	 
+	if(num2 > num1)
+	   SWAP(uint32_t,num2,num1); 
+		 
+	 }while(num1 >= num2);
+}   
    
 };
 
