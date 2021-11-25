@@ -58,6 +58,9 @@ RSA Algorithm Example:
     - https://www.cs.utexas.edu/~mitra/honors/soln.html
 ************************************************************************************/
 #include "rsa.h"
+#include <stdint>
+#include <cstdlib> 
+#include <time.h>
 
 #define SWAP(type, value1, value2) {type temp=value2; value2=value1; value1=temp;}
 
@@ -138,5 +141,30 @@ STATIC bool RSA::IsPrime(uint32_t value)
 	return true;
 }
 
+ /* 
+  * @name GenRandPrime 
+  * @brief  srand() is used to initialise random number generators. This function gives a starting point  
+  *           for producing the pseudo-random integer series. The argument is passed as a seed for generating
+  *           a pseudo-random number. prototype : int srand(unsigned int seed);
+  * @param  none
+  * @return 32 bit of random prime number
+  */
+
+uint32_t RSA::GenRandPrime()
+{
+	#ifndef UINT32_MAX
+	  #define UINT32_MAX 0xFFFFFFFF
+	#endif
+	
+	uint32_t rp; // random prime number
+	do
+	{
+		srand(time(NULL));
+		rp = rand() % UINT32_MAX ;
+		
+	}while (!RSA::IsPrime(rp));
+	
+	return rp;
+}
 
 
