@@ -30,7 +30,9 @@
 #define _RSA_H
 
 ////////////////////  Includes ///////////////////
-#include <inttypes.h>
+#include <inttypes.h>                           //                       
+//////////////////////////////////////////////////
+
 #define STATIC static  
 
 class RSA{
@@ -42,11 +44,12 @@ public:
    
  private:
    
+   uint32_t n; /* n is known as the modulus. */ 
+   uint32_t e; /* e is known as the public exponent or encryption exponent or just the exponent. */
+   uint32_t d; /* d is known as the secret exponent or decryption exponent. */
    uint32_t p;
    uint32_t q;
-   uint32_t n;
    uint32_t phi; 
-   uint32_t e;
    
 private:
   void Init();
