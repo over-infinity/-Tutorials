@@ -62,7 +62,10 @@ RSA Algorithm Example:
 #define SWAP(type, value1, value2) {type temp=value2; value2=value1; value1=temp;}
 
 /*  RSA Constructor   */
-   RSA::RSA(){} 
+   RSA::RSA(uint32_t _p_, uint32_t _q_): 
+	p(_p_),q(_q_),n(p*q){
+		
+	} 
 
    /*  RSA destructor   */
    RSA::~RSA(){}
