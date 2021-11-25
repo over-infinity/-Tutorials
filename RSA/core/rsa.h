@@ -37,13 +37,14 @@
 
 class RSA{
    
+/* Public class methods  */     
 public:  
    
    RSA();   
    ~RSA();
-   
- private:
-   
+
+ /* Private attributes  */
+ private:   
    uint32_t n; /* n is known as the modulus. */ 
    uint32_t e; /* e is known as the public exponent or encryption exponent or just the exponent. */
    uint32_t d; /* d is known as the secret exponent or decryption exponent. */
@@ -51,6 +52,7 @@ public:
    uint32_t q;
    uint32_t phi; 
    
+ /* Private class methods  */   
 private:
   void Init();
   STATIC uint32_t Gcd1(uint32_t num1, uint32_t num2);
