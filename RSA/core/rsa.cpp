@@ -147,7 +147,7 @@ STATIC bool RSA::IsPrime(uint32_t value)
   *           for producing the pseudo-random integer series. The argument is passed as a seed for generating
   *           a pseudo-random number. prototype : int srand(unsigned int seed);
   * @param  none
-  * @return 32 bit of random prime number
+  * @return random prime number between 0 < rp < UINT32_MAX
   */
 
 uint32_t RSA::GenRandPrime()
@@ -160,7 +160,7 @@ uint32_t RSA::GenRandPrime()
 	do
 	{
 		srand(time(NULL));
-		rp = rand() % UINT32_MAX ;
+		rp = (rand() % UINT32_MAX) ;
 		
 	}while (!RSA::IsPrime(rp));
 	
