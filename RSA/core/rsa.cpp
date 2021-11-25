@@ -64,10 +64,15 @@ RSA Algorithm Example:
 
 #define SWAP(type, value1, value2) {type temp=value2; value2=value1; value1=temp;}
 
+#ifndef UINT32_MAX
+  #define UINT32_MAX 0xFFFFFFFF
+#endif
+
 /*  RSA Constructor   */
-   RSA::RSA(uint32_t _p_, uint32_t _q_): 
-	p(_p_),q(_q_),n(p*q){
-		
+   RSA::RSA() {
+	
+	   Init();
+	   
 	} 
 
    /*  RSA destructor   */
@@ -150,21 +155,32 @@ STATIC bool RSA::IsPrime(uint32_t value)
   * @return random prime number between 0 < rp < UINT32_MAX
   */
 
-uint32_t RSA::GenRandPrime()
-{
-	#ifndef UINT32_MAX
-	  #define UINT32_MAX 0xFFFFFFFF
-	#endif
-	
+uint32_t RSA::GenRandPrime(uint32_t maxvalue)
+{	
 	uint32_t rp; // random prime number
 	do
 	{
 		srand(time(NULL));
-		rp = (rand() % UINT32_MAX) ;
+		rp = (rand() % maxvalue) ;
 		
 	}while (!RSA::IsPrime(rp));
 	
 	return rp;
 }
 
+void RSA::Init(){	
+	
+	 p = RSA::GenRandPrime(UINT32_MAX); // 1 < p < UINT32_MAX
+	 do{	     
+	      q = RSA::GenRandPrime(UINT32_MAX); // 1 < q < UINT32_MAX					
+	  } while(p==q)// generate prime numbers p and q.		
+		
+	phi = n - p - q + 1;  // phi = (p-1)(q-1) = pq-p-q+1 = n-p-q+1  
+	
+	do{
+	    e = RSA::GenRandPrime(phi);  // 1 < e < phi
+		
+	}while (RSA::GCD2(e,phi) != 1); // e and phi sould be prime to each other(gcd(e,phi)==1)
+	
+}
 
