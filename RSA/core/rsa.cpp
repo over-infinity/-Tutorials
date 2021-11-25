@@ -157,13 +157,16 @@ STATIC bool RSA::IsPrime(uint32_t value)
 
 uint32_t RSA::GenRandPrime(uint32_t maxvalue)
 {	
+	#define MinRatio 5000
+	
 	uint32_t rp; // random prime number
+	uint32_t minvalue = (maxvalue / MinRatio ) + 1;
 	do
 	{
 		srand(time(NULL));
 		rp = (rand() % maxvalue) ;
 		
-	}while (!RSA::IsPrime(rp));
+	}while (!RSA::IsPrime(rp) || rp  < minvalue);
 	
 	return rp;
 }
