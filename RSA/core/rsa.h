@@ -37,9 +37,16 @@ class RSA{
    
 public:  
    
-   RSA();   
+   RSA(uint32_t p, uint32_t q);   
    ~RSA();
-  
+   
+ private:
+   
+   uint32_t p;
+   uint32_t q;
+   uint32_t n;
+   
+private:
   STATIC uint32_t Gcd1(uint32_t num1, uint32_t num2);
   STATIC uint32_t Gcd2(uint32_t num1, uint32_t num2);
   STATIC bool IsPrime(uint32_t value);
