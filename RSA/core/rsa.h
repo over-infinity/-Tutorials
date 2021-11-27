@@ -38,10 +38,9 @@
 class RSA{
    
 /* Public class methods  */     
-public:  
-   
+public:     
    RSA();   
-   ~RSA();
+   ~RSA();   
 
  /* Private attributes  */
  private:   
@@ -58,10 +57,7 @@ private:
   STATIC uint32_t Gcd1(uint32_t num1, uint32_t num2);
   STATIC uint32_t Gcd2(uint32_t num1, uint32_t num2);
   STATIC bool IsPrime(uint32_t value);   
-  STATIC uint32_t GenRandPrime(uint32_t maxvalue);
-  
-  
+  STATIC uint32_t GenRandPrime(uint32_t maxvalue);  
 };
-
 
 #endif  // _RSA_H
