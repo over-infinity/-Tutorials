@@ -154,7 +154,6 @@ STATIC bool RSA::IsPrime(uint32_t value)
   * @param  none
   * @return random prime number between 0 < rp < UINT32_MAX
   */
-
 uint32_t RSA::GenRandPrime(uint32_t maxvalue)
 {	
 	#define MinRatio 5000
@@ -171,6 +170,12 @@ uint32_t RSA::GenRandPrime(uint32_t maxvalue)
 	return rp;
 }
 
+ /* 
+  * @name Init 
+  * @brief  Initialize internal parameters.(p, q, n, phi, e and d)
+  * @param  none
+  * @return none
+  */
 void RSA::Init(){	
 	
 	 p = RSA::GenRandPrime(UINT32_MAX); // 1 < p < UINT32_MAX
