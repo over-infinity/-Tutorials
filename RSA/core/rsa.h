@@ -40,7 +40,10 @@ class RSA{
 /* Public class methods  */     
 public:     
    RSA();   
-   ~RSA();   
+   ~RSA();
+   void Encrypt();
+   void Decrypt();
+
 
  /* Private attributes  */
  private:   
