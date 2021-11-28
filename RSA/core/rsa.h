@@ -41,8 +41,8 @@ class RSA{
 public:     
    RSA();   
    ~RSA();
-   void Encrypt();
-   void Decrypt();
+   void Encrypt(const char* plaintextfilename, const char* ciphertextfilename);
+   void Decrypt(const char* ciphertextfilename,const char* plaintextfilename);
 
 
  /* Private attributes  */
