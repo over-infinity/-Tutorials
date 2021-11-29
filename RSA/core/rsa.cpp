@@ -192,3 +192,12 @@ void RSA::Init(){
 	
 }
 
+void RSA::Encrypt(const char* plaintextfilename, const char* ciphertextfilename){
+	
+}
+
+void RSA::Decrypt(const char* ciphertextfilename,const char* plaintextfilename){
+	
+	
+	
+}
