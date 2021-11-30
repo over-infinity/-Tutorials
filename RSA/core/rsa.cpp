@@ -209,6 +209,19 @@ STATIC uint32_t RSA::ModularInverse(uint32_t num, uint32_t modular){
 	
 }
 
+ /* 
+  * @name ModularMultiInverse_Naive 
+  * @brief  A ModularMultiInverse_Naive method is to try all numbers from 1 to m. For every number x, check if (num*x) % modular is 1. 
+  * @param  num
+  * @param  modular
+  * @return none
+  */
+STATIC uint32_t ModularMultiInverse_Naive(uint32_t num, uint32_t modular){
+	
+	for (int x = 1; x < modular; x++)
+        if (((num %modular) * ( x%modular )) % modular == 1)
+            return x;	
+}
 
 
 
