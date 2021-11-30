@@ -192,6 +192,27 @@ void RSA::Init(){
 	
 }
 
+
+ /* 
+  * @name ModularInverse 
+  * @brief  A modular multiplicative inverse of an integer a is an integer x such that a⋅x is congruent to 1 modular some modulus m.  *          
+  *          We should note that the modular inverse does not always exist. For example, let m=4, a=2. By checking all possible values
+  *	     modulo m is should become clear that we cannot find any x that satisfying the above equation. 
+  *	     It can be proven that the modular inverse exists if and only if a and m are relatively prime in other words gcd(a,m)=1.
+  * @param  none
+  * @return none
+  */
+
+STATIC uint32_t RSA::ModularInverse(uint32_t num, uint32_t modular){
+	
+	
+	
+}
+
+
+
+
+
 void RSA::Encrypt(const char* plaintextfilename, const char* ciphertextfilename){
 	
 }
