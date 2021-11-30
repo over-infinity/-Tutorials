@@ -61,7 +61,12 @@ private:
   STATIC uint32_t Gcd2(uint32_t num1, uint32_t num2);
   STATIC bool IsPrime(uint32_t value);   
   STATIC uint32_t GenRandPrime(uint32_t maxvalue); 
+   
+  /* implement diffrent verion of calculating Modular Multiplicative Inverse  */
   STATIC uint32_t ModularInverse(uint32_t num, uint32_t modular);
+  STATIC uint32_t ModularMultiInverse_Naive(uint32_t num, uint32_t modular);
+   
+   
 };
 
 #endif  // _RSA_H
