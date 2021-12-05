@@ -4,7 +4,7 @@ Author Over-Infinity
 <hr> 
 A data structure is a particular way of organizing data in a computer so that it can be used effectively by applications. in this repository we try to implement basic data structures in C++ language.
 
-<h2>Basic data structures include </h2>
+<h2> Basic Data Structures include </h2>
 
 <h3>-Array </h3> 
  <b>Array</b> is a container which can hold a fix number of items and these items should be of the same type. 
