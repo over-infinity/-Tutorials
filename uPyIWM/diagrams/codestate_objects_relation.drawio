@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-08T07:17:02.111Z" agent="5.0 (Windows)" etag="jYAfrteSBPzkVh-2Kjjw" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-08T07:36:32.584Z" agent="5.0 (Windows)" etag="_1szT989eAnmfgNfVzR3" version="15.9.1" type="github">
   <diagram id="wnDa86_sgH5_1HbZJhVr" name="Page-1">
-    <mxGraphModel dx="643" dy="319" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="914" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -213,8 +213,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lMU0eE661rHLFskUPlmX-15" value="&lt;h1&gt;Codestate Objects Relationship&lt;br&gt;&lt;/h1&gt;&lt;p&gt;This diagram shows relationship between different objects &lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="790" height="240" as="geometry" />
+        <mxCell id="lMU0eE661rHLFskUPlmX-15" value="&lt;h1&gt;Codestate Objects Relationship&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Each time that a function bytecode execute; a&amp;nbsp; mp_code_state_t structure will be create for monitoring and controls executing of code.&lt;/p&gt;&lt;p&gt;This structure will be prepare later by mp_setup_code_state function that located in bc.c file. When a function code compile by a compiler, at the end a structure named mp_obj_fun_bc_t will be created. this structure include all information about function and also its byteode.&lt;/p&gt;&lt;p&gt;mp_obj_frame_t structure use by MicroPython for tracing and profiling the code and it is useful for debugging code scripts.&amp;nbsp; &lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="790" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
