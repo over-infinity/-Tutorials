@@ -1,1 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2021-12-09T06:54:24.621Z" agent="5.0 (Windows)" etag="ffh4DVXag_EO1Ngn6TsC" version="15.9.4" type="github"><diagram id="kvoGo0gfQWNKkFxHk639" name="Page-1">jZJNb4MwDIZ/DcdVfLQVXMfodumhYx/aaYrAJdkCQcFdYL9+oRgoqirtEjlPXjvJaztBXLaPmtV8r3KQju/mrRM8OL4feWu79qAbwHpDoNAiH5A3g1T8AkGX6Enk0CyEqJREUS9hpqoKMlwwprUyS9lRyeWtNSvgCqQZk9f0XeTIBxpu3Jk/gSj4eLPn0knJRjGBhrNcmQsUJE4Qa6VwiMo2Btl7N/oy5O1unE4P01DhfxLMW/JcR8nu8PGSJl+vh30kwjuq8sPkiT7cINNIL8ZOTlSr78kB+/Z7jqW0oWdD+7O615Vt0c/A6iiVybgtszoX++w1hguEtGZZLzRWZhndDRqhvfkpb7LKjhioElB3VkIJ2y25S+Plh7Q3c7OmlvCLRo15jOajmErPFtqAXBy3c7fOZxcjHyR/</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-09T07:01:05.242Z" agent="5.0 (Windows)" etag="TO1WiCrQ3by7fqjnMVR_" version="15.9.4" type="github">
+  <diagram id="kvoGo0gfQWNKkFxHk639" name="Page-1">
+    <mxGraphModel dx="868" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wVERp9EFQYTSEjUQM9i8-1" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="700" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JKBhCjqjnzoE227UuKIU-1" value="&lt;h1&gt;Calling Bytecode Functions Flochart&lt;br&gt;&lt;/h1&gt;&lt;p&gt;This flowchart shows how created bytecode functions will be executed in Micropython. So at first we it get memory base on state size of function to be executed. if the size code is small enough so we use stack for it otherwise use heap memory. after getting memory initial code state structure by calling mp_setup_code_stat() function. and finally code state structure to mp_executed_code() in order to run it on vertual machine. &lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="30" y="10" width="810" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
