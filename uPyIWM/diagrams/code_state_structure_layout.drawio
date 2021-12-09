@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-09T11:22:23.086Z" agent="5.0 (Windows)" etag="Tc3RLtzEYzsFU8WgSBnk" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-09T11:25:34.488Z" agent="5.0 (Windows)" etag="W3RUFzatgHymk61l24AE" version="15.9.4" type="github">
   <diagram id="Xi_2tpuAvu5uZQwvn5Ua" name="Page-1">
-    <mxGraphModel dx="1335" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -145,26 +145,6 @@
         <mxCell id="QHXNnbiT5XRLXtRk8al0-2" value="&lt;h1&gt;State Structure&lt;br&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;State itself consists of two parts : &lt;font color=&quot;#000066&quot;&gt;&lt;b&gt;state &lt;/b&gt;&lt;/font&gt;and &lt;b&gt;&lt;font color=&quot;#006633&quot;&gt;exc_stack&lt;/font&gt;&lt;/b&gt;. all function variable goes into state area and exc_stack use for stacking exceptions during executing of function. State area includes variable of inputs argument variables(position and key words args) ,local variables and clouser variables.&lt;/font&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="466" width="800" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="QHXNnbiT5XRLXtRk8al0-8" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="190" y="588" width="470" height="77" as="geometry" />
-        </mxCell>
-        <mxCell id="QHXNnbiT5XRLXtRk8al0-3" value="&lt;span style=&quot;&quot;&gt;State Area&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=14;fontStyle=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="QHXNnbiT5XRLXtRk8al0-8">
-          <mxGeometry y="17" width="310" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="QHXNnbiT5XRLXtRk8al0-4" value="Exception Stack Area" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=14;fontStyle=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="QHXNnbiT5XRLXtRk8al0-8">
-          <mxGeometry x="309" y="17" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="QHXNnbiT5XRLXtRk8al0-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000000;" edge="1" parent="QHXNnbiT5XRLXtRk8al0-8">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint as="sourcePoint" />
-            <mxPoint x="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QHXNnbiT5XRLXtRk8al0-7" value="&amp;nbsp; Code_State -&amp;gt; state[]&amp;nbsp;&amp;nbsp; " style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontColor=#000000;" vertex="1" connectable="0" parent="QHXNnbiT5XRLXtRk8al0-6">
-          <mxGeometry x="-0.1244" y="5" relative="1" as="geometry">
-            <mxPoint x="24" y="3" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="QHXNnbiT5XRLXtRk8al0-9" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=14;fontColor=#000000;entryX=0.549;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="QHXNnbiT5XRLXtRk8al0-4" target="Hi1VyCGhMOIUi_0tD9En-10">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="430" as="sourcePoint" />
@@ -175,6 +155,28 @@
               <mxPoint x="708" y="290" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="QHXNnbiT5XRLXtRk8al0-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="187" y="590" width="472" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="QHXNnbiT5XRLXtRk8al0-11" value="&amp;nbsp;n_state&amp;nbsp; " style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="QHXNnbiT5XRLXtRk8al0-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QHXNnbiT5XRLXtRk8al0-12" value="&amp;nbsp;n_exc_stack&amp;nbsp; " style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="QHXNnbiT5XRLXtRk8al0-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="312" as="sourcePoint" />
+            <mxPoint x="472" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QHXNnbiT5XRLXtRk8al0-3" value="&lt;span style=&quot;&quot;&gt;State Area&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=14;fontStyle=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="QHXNnbiT5XRLXtRk8al0-15">
+          <mxGeometry x="3" y="15" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QHXNnbiT5XRLXtRk8al0-4" value="Exception Stack Area" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=14;fontStyle=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="QHXNnbiT5XRLXtRk8al0-15">
+          <mxGeometry x="312" y="15" width="160" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
