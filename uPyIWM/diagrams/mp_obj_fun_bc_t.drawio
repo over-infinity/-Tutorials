@@ -1,1 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-12-11T09:19:29.643Z" agent="5.0 (Windows)" version="15.9.4" etag="RdnB0w_FbSuPX4fSSvSL" type="github"><diagram id="wbdEYN_EiqjYCb6oIjMI">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-11T09:21:36.257Z" agent="5.0 (Windows)" etag="2ErHPgczeygLpPXIFOGc" version="15.9.4" type="github">
+  <diagram id="wbdEYN_EiqjYCb6oIjMI" name="Page-1">
+    <mxGraphModel dx="868" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NpgxRqE8igU9WAZxbFdr-1" value="&lt;h1&gt;Function Bytecode Structure&lt;br&gt;&lt;/h1&gt;&lt;p&gt;MicroPython create mp_obj_fun_bc_t structure for each bytecode function.&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="770" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
