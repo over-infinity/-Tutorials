@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-12-15T09:19:13.375Z" agent="5.0 (Windows)" etag="mAM-t501rz80NA1fM55_" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-15T09:22:10.274Z" agent="5.0 (Windows)" etag="inPcy6IBvAEy6cRMI7vb" version="15.9.4" type="github">
   <diagram id="qV4pwJ-D3a9XbADc4EKG" name="Page-1">
-    <mxGraphModel dx="755" dy="337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1335" dy="597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="mck3mBb6Df0MLpiKtGmo-2" value="mp_obj_task_t" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="50" y="190" width="140" height="156" as="geometry" />
+          <mxGeometry x="230" y="180" width="140" height="156" as="geometry" />
         </mxCell>
         <mxCell id="mck3mBb6Df0MLpiKtGmo-3" value="+ pairheap: mp_pairheap_t&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mck3mBb6Df0MLpiKtGmo-2">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -21,6 +21,21 @@
         </mxCell>
         <mxCell id="mck3mBb6Df0MLpiKtGmo-5" value="+ ph_key: mp_obj_t" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mck3mBb6Df0MLpiKtGmo-2">
           <mxGeometry y="130" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mck3mBb6Df0MLpiKtGmo-9" value="mp_obj_task_queue_t" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="140" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="mck3mBb6Df0MLpiKtGmo-10" value="+ base: mp_obj_base_t" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mck3mBb6Df0MLpiKtGmo-9">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mck3mBb6Df0MLpiKtGmo-11" value="+ heap: mp_obj_task_t*" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mck3mBb6Df0MLpiKtGmo-9">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="mck3mBb6Df0MLpiKtGmo-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mck3mBb6Df0MLpiKtGmo-11" target="mck3mBb6Df0MLpiKtGmo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mck3mBb6Df0MLpiKtGmo-14" value="&lt;h1&gt;Module Asysn&lt;br&gt;&lt;/h1&gt;&lt;p&gt;module async&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="810" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
