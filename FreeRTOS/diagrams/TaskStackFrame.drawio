@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-23T12:45:52.520Z" agent="5.0 (Windows)" etag="FGTN2LZnbxp62reoZcZb" version="18.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-23T12:47:55.654Z" agent="5.0 (Windows)" etag="qQ7tbx0zJhPn1wnWFcQp" version="18.1.1" type="github">
   <diagram id="d_kelk01pUE1jKnP3URO" name="Page-1">
     <mxGraphModel dx="1240" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -98,6 +98,12 @@
         </mxCell>
         <mxCell id="dQWyhgAZro9AvPtf5xwi-1" value="FreeRTOS Task Stack Frame" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=5;fontSize=19;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="50" y="20" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dQWyhgAZro9AvPtf5xwi-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="dQWyhgAZro9AvPtf5xwi-2" target="uXBMOKKRQQdfkrVLRq0o-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dQWyhgAZro9AvPtf5xwi-2" value="Program Status Register" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="310" y="103" width="200" height="28.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
