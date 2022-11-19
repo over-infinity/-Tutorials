@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2022-11-19T06:36:54.861Z" agent="5.0 (X11)" version="20.5.3" etag="kwZ7Es68Rv2crOtum0Qk" type="github"><diagram id="ub3vnYTZT_gb7076K1Aa">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-19T06:42:52.639Z" agent="5.0 (X11)" etag="yLQPkI7uiYf-T_6geGDF" version="20.5.3" type="github">
+  <diagram id="ub3vnYTZT_gb7076K1Aa" name="Page-1">
+    <mxGraphModel dx="1185" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.iot_thing_plc;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-2" value="&lt;div style=&quot;font-size: 15px;&quot;&gt;PLC Modbus&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=5;perimeterSpacing=3;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="53.5" y="180" width="111" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-5" value="I/O" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=5;perimeterSpacing=3;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="239.5" width="20" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-7" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;strokeWidth=5;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="710" y="224.75" width="100" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-8" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.desktop_pc;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="270" y="190" width="60" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-9" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.desktop_pc;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="510" y="190" width="60" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GaA5yQTh2X4wVMZrG-Xp-10" value="&lt;div style=&quot;font-size: 19px;&quot;&gt;HMI&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=2;perimeterSpacing=6;fontSize=19;opacity=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="740" y="237" width="40" height="41.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
